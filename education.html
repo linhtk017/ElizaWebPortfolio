@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eliza | Education</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <a class="header-logo" href="index.html">Eliza<span>.</span></a>
+    <nav>
+      <a class="nav-item" href="about.html">About</a>
+      <a class="nav-item active" href="education.html">Education</a>
+      <a class="nav-item" href="experience.html">Experience</a>
+      <a class="nav-item" href="project.html">Project</a>
+      <a class="nav-item" href="contact.html">Contact</a>
+    </nav>
+    <button class="header-btn" id="letsTalkBtn">Let's Talk</button>
+  </header>
+  <section id="education">
+    <div class="education-header"> 
+      <span class="education-dot"></span>
+      <h2 class="education-title">Education</h2>
+      <p class="education-desc">
+        Background in International Business with a strong foundation in management and strategy, further strengthened by certifications in IT Business Analysis and Project Management. Demonstrates clear commitment to developing as a Product Owner.
+      </p>
+    </div>
+
+    <!-- Degree Title -->
+    <div class="degree-section">
+      <h2 class="degree-title">Degree</h2>
+    </div>
+
+    <div class="education-list">
+      <!-- Education 1 -->
+      <div class="education-card">
+        <div class="education-info">
+          <div class="education-year">2016 – 2020</div>
+          <div class="education-school">VIETNAM NATIONAL UNIVERSITY</div>
+          <div class="education-degree">Bachelor of International Business</div>
+          <div class="education-location">Hanoi, Vietnam</div>
+        </div>
+        <div class="education-desc">
+          <p>
+            Graduated in International Business with expertise in strategy, market analysis, and cross-cultural communication. Participated in research projects and business competitions, building skills in problem-solving, teamwork, and stakeholder management. These capabilities were later expanded through certifications in IT Business Analysis and Project Management, directly supporting current responsibilities as a Product Owner.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="certificate-header">
+      <h2 class="certificate-title">Certificate</h2>
+    </div>
+    <div class="certificate-list">
+    <div class="certificate-card" data-img="certificate1.png">
+    <div class="certificate-name">Google Project Management</div>
+    <div class="certificate-org">Coursera</div>
+    <div class="certificate-year">2025</div>
+  </div>
+  <div class="certificate-card" data-img="certificate2.png">
+    <div class="certificate-name">IT Business Analyst</div>
+    <div class="certificate-org">Cole</div>
+    <div class="certificate-year">2025</div>
+  </div>
+
+<!-- Modal hiển thị ảnh certificate -->
+<div id="certificate-modal" class="certificate-modal">
+  <span class="certificate-close">&times;</span>
+  <img class="certificate-img" src="" alt="Certificate">
+</div>
+</div>
+
+    <div class="skills-section">
+      <h2 class="skills-title">Professional skillset</h2>
+      <div class="skills-list">
+        <div class="skill-item"><span class="skill-dot"></span>Requirements Gathering & Analysis</div>
+        <div class="skill-item"><span class="skill-dot"></span>Product Roadmap & Backlog Prioritization</div>
+        <div class="skill-item"><span class="skill-dot"></span>Stakeholder Management</div>
+        <div class="skill-item"><span class="skill-dot"></span>Agile Methodologies</div>
+      </div>
+    </div>
+
+    <div class="tools-section">
+      <h2 class="tools-title">Tool</h2>
+      <div class="tools-list">
+        <div class="tool-item"><span class="skill-dot"></span>Jira/ Clickup</div>
+        <div class="tool-item"><span class="skill-dot"></span>Figma</div>
+        <div class="tool-item"><span class="skill-dot"></span>Confluence/ Notion</div>
+        <div class="tool-item"><span class="skill-dot"></span>Google Analytics/ Power BI</div>
+      </div>
+    </div>
+
+    <div class="tools-section">
+      <h2 class="tools-title">Technical knowledge</h2>
+      <div class="tools-list">
+        <div class="tool-item"><span class="skill-dot"></span>HTML/CSS (basic)</div>
+        <div class="tool-item"><span class="skill-dot"></span>SQL (data queries & reports)</div>
+      </div>
+    </div>
+
+    <div class="languages-section">
+      <h2 class="languages-title">Language</h2>
+      <div class="languages-list">
+        <div class="language-item"><span class="skill-dot"></span>English (proficient-B2)</div>
+        <div class="language-item"><span class="skill-dot"></span>Vietnamese (native)</div>
+      </div>
+    </div>
+  </section>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/linhtk" target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://zalo.me/0966209092" target="_blank">
+        <img src="zalo.png" alt="Zalo">
+      </a>
+    </div>
+    <div class="footer-links">
+      <a href="#">FAQ</a>
+      <a href="#">Services</a>
+      <a href="about.html">About Me</a>
+      <a href="contact.html">Contact</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <div class="footer-copyright">
+      © 2023 Eliza | All Rights Reserved
+    </div>
+  </div>
+</footer>
+
+<!-- Removed duplicate header scroll script block -->
+
+<script>
+  // Tự động ẩn/ hiện header khi cuộn
+  let lastScrollTop = 0;
+  const header = document.querySelector('header');
+  window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+      header.style.transform = 'translateY(-100%)';
+      header.style.transition = 'transform 0.3s';
+    } else {
+      header.style.transform = 'translateY(0)';
+      header.style.transition = 'transform 0.3s';
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
+
+  // Hiển thị ảnh certificate khi click
+  document.querySelectorAll('.certificate-card').forEach(function(card) {
+    card.addEventListener('click', function() {
+      const imgSrc = card.getAttribute('data-img');
+      const modal = document.getElementById('certificate-modal');
+      const modalImg = modal.querySelector('.certificate-img');
+      modalImg.src = imgSrc;
+      modal.classList.add('active');
+    });
+  });
+
+  // Đóng modal khi click vào nút close hoặc nền
+  document.querySelector('.certificate-close').onclick = function() {
+    document.getElementById('certificate-modal').classList.remove('active');
+  };
+  document.getElementById('certificate-modal').onclick = function(e) {
+    if (e.target === this) {
+      this.classList.remove('active');
+    }
+  };
+</script>
+
+</body>
+</html>
