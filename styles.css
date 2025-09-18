@@ -1040,3 +1040,124 @@ footer {
     font-size: 15px;
   }
 }
+
+/* Responsive cho toàn bộ trang */
+@media (max-width: 1100px) {
+  .project-card {
+    max-width: 98vw;
+    padding: 24px 8px;
+    gap: 20px;
+  }
+  .footer-container {
+    padding: 18px 8px;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    padding: 14px 6px;
+    gap: 10px;
+  }
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  .header-logo {
+    font-size: 24px;
+  }
+  .header-btn {
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+  .projects-header {
+    padding: 0 8px;
+    text-align: center;
+  }
+  .projects-title {
+    font-size: 28px;
+  }
+  .projects-desc {
+    font-size: 15px;
+  }
+  .projects-list {
+    padding: 0 4px;
+  }
+  .project-card {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px 4px;
+    gap: 14px;
+    margin: 0 auto 28px auto;
+  }
+  .project-info {
+    padding: 0;
+    font-size: 15px;
+  }
+  .project-img {
+    max-width: 100%;
+    min-width: 0;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .project-img img {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+  }
+  .download-apk-btn {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 14px;
+    padding: 14px 4px;
+    font-size: 14px;
+  }
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-title {
+    font-size: 20px;
+  }
+  .project-name {
+    font-size: 17px;
+  }
+  .project-role {
+    font-size: 14px;
+  }
+  .project-detail-list {
+    font-size: 13px;
+    padding-left: 12px;
+  }
+  .footer-container {
+    font-size: 12px;
+  }
+  .header-logo {
+    font-size: 18px;
+  }
+  .header-btn {
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+}
+
+/* Đảm bảo các section khác cũng căn giữa và co giãn hợp lý */
+section, #about-me, #highlight, #education, #experience, #contact-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
