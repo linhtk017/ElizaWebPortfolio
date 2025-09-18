@@ -978,122 +978,65 @@ footer {
   }
 }
 
-@media (max-width: 1100px) {
-  .project-card {
-    max-width: 98vw;
-    padding: 24px 8px;
-    gap: 20px;
-  }
-  .footer-container {
-    padding: 18px 8px;
-  }
-}
-
 @media (max-width: 900px) {
-  header {
-    flex-direction: column;
-    padding: 14px 6px;
-    gap: 10px;
-  }
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-  }
-  .header-logo {
-    font-size: 24px;
-  }
-  .header-btn {
-    font-size: 15px;
-    padding: 8px 16px;
-  }
-  .projects-header {
-    padding: 0 8px;
-    text-align: center;
-  }
-  .projects-title {
-    font-size: 28px;
-  }
-  .projects-desc {
-    font-size: 15px;
-  }
-  .projects-list {
-    padding: 0 4px;
-  }
   .project-card {
     flex-direction: column;
-    align-items: stretch;
-    padding: 16px 4px;
-    gap: 14px;
-    margin: 0 auto 28px auto;
+    width: 96vw;
   }
-  .project-info {
-    padding: 0;
-    font-size: 15px;
-  }
-  .project-img {
-    max-width: 100%;
-    min-width: 0;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+  .project-info, .project-img {
+    padding: 32px 16px;
+    min-height: unset;
   }
   .project-img img {
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto;
-    display: block;
+    max-width: 100%;
+    max-height: 220px;
   }
-  .download-apk-btn {
-    width: 100%;
-    font-size: 15px;
-    padding: 10px 0;
-    margin-top: 10px;
-  }
-  .footer-container {
+  .education-card {
     flex-direction: column;
-    gap: 14px;
-    padding: 14px 4px;
-    font-size: 14px;
+    gap: 24px;
+    padding: 32px 16px;
+    width: 96vw;
   }
-  .footer-links {
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: center;
+  .education-title, .certificate-header, .skills-section, .tools-section, .languages-section {
+    margin-left: 16px;
   }
-}
-
-@media (max-width: 600px) {
-  .projects-title {
-    font-size: 20px;
+  .certificate-list {
+    margin-left: 16px;
+    flex-direction: column;
+    gap: 24px;
   }
-  .project-name {
-    font-size: 17px;
+  .skills-list, .tools-list, .languages-list {
+    gap: 24px 32px;
   }
-  .project-role {
-    font-size: 14px;
+  .experience-card {
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 16px;
+    width: 96vw;
   }
-  .project-detail-list {
-    font-size: 13px;
-    padding-left: 12px;
-  }
-  .footer-container {
-    font-size: 12px;
-  }
-  .header-logo {
-    font-size: 18px;
-  }
-  .header-btn {
-    font-size: 13px;
-    padding: 7px 10px;
+  .experience-title {
+    margin-left: 16px;
   }
 }
 
-/* Đảm bảo các section khác cũng căn giữa và co giãn hợp lý */
-section, #about-me, #highlight, #education, #experience, #contact-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  box-sizing: border-box;
+
+/* Responsive */
+@media (max-width: 900px) {
+  .highlight-list {
+    gap: 24px;
+  }
+  .highlight-item {
+    width: 120px;
+  }
+  .highlight-img {
+    width: 80px;
+    height: 80px;
+  }
+  .highlight-img img {
+    width: 64px;
+    height: 64px;
+  }
+  .highlight-caption {
+    font-size: 15px;
+  }
 }
